@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Comparing Datatypes</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/nivo-lightbox.css">
+	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+	<link rel="stylesheet" href="css/templatemo-style.css">
+	<link rel="prefetch" href="https://rpsthecoder.github.io/js-speech-synthesis/pause1.svg">
+	<link rel="prefetch" href="https://rpsthecoder.github.io/js-speech-synthesis/stop1.svg">
+	<link rel="prefetch" href="https://rpsthecoder.github.io/js-speech-synthesis/play1.svg">
+	<link rel="stylesheet" href="css/speech.css">
+	<!-- google web font css -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		/* The Modal (background) */
+		.modal {
+			display: none;
+			/* Hidden by default */
+			position: fixed;
+			/* Stay in place */
+			z-index: 1;
+			/* Sit on top */
+			padding-top: 100px;
+			/* Location of the box */
+			left: 0;
+			top: 0;
+			width: 100%;
+			/* Full width */
+			height: 100%;
+			/* Full height */
+			overflow: auto;
+			/* Enable scroll if needed */
+			background-color: rgb(0, 0, 0);
+			/* Fallback color */
+			background-color: rgba(0, 0, 0, 0.4);
+			/* Black w/ opacity */
+		}
+
+		/* Modal Content */
+		.modal-content {
+			background-color: #fefefe;
+			margin: auto;
+			padding: 20px;
+			border: 1px solid #888;
+			width: 80%;
+		}
+
+		/* The Close Button */
+		.close {
+			color: #aaaaaa;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+			color: #000;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- navigation -->
+
+	<div class="container">
+		<div class="navbar navbar-default navbar-static-top" role="navigation">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+				</button>
+				<h1>C++ Programming</h1>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html" class="active">HOME</a></li>
+					<li><a href="about.html">TOPICS</a></li>
+					<li><a href="portfolio.html">HELP</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- home section -->
+	<div id="home">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 col-sm-3"></div>
+				<div class="col-md-7 col-sm-9">
+					<h3>Welcome to</h3>
+					<h1>C++ Learning HUB</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- team section -->
+	<div id="team">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-offset-2 col-md-8 col-sm-12">
+					<h2>Comparing Datatypes</h2>
+
+				</div>
+			</div>
+
+			<p class="tm-pt-30">
+				<p>
+					While writing program in any language, you need to use various variables to store
+					various information. Variables are nothing but reserved memory locations to store
+					values. This means that when you create a variable you reserve some space in memory.
+
+					You may like to store information of various data types like character, wide
+					character, integer, floating point, double floating point, boolean etc. Based on the
+					data type of a variable, the operating system allocates memory and decides what can
+					be stored in the reserved memory.
+				</p>
+
+			</p>
+			<hr class="tm-hr-primary">
+
+			<h2 class="pt-2 tm-mb-40 tm-color-primary tm-post-title">Primitive Built-in Types</h2>
+                            <hr class="tm-hr-primary tm-mb-55">
+                            <p>C++ offers the programmer a rich assortment of built-in as well as user defined data
+                                types. Following table lists down seven basic C++ data types −</p>
+
+                            <img src="img/lesson6.1.png" alt="" width="100%" draggable="false">
+
+                            <p>Several of the basic types can be modified using one or more of these type modifiers
+                                −<br>
+
+                                • <b>signed</b><br>
+                                • <b>unsigned</b><br>
+                                • <b>short</b><br>
+                                • <b>long</b><br>
+                            </p>
+
+                            <img src="img/lesson6.2.png" alt="" width="100%" draggable="false">
+
+
+                            <p>The size of variables might be different from those shown in the above table, depending
+                                on the compiler and the computer you are using.
+                                <br><Br>
+                                Following is the example, which will produce correct size of various data types on your
+                                computer.
+                                <br><br>
+                                <textarea cols="2" rows="15">
+#include <iostream>
+using namespace std;
+
+int main() {
+   cout << "Size of char : " << sizeof(char) << endl;
+   cout << "Size of int : " << sizeof(int) << endl;
+   cout << "Size of short int : " << sizeof(short int) << endl;
+   cout << "Size of long int : " << sizeof(long int) << endl;
+   cout << "Size of float : " << sizeof(float) << endl;
+   cout << "Size of double : " << sizeof(double) << endl;
+   cout << "Size of wchar_t : " << sizeof(wchar_t) << endl;
+   
+   return 0;
+}
+                        </textarea>
+
+                                <p>This example uses <b>endl</b>, which inserts a new-line character after every line
+                                    and << operator is being used to pass multiple values out to the screen. We are also
+                                        using <b>sizeof()</b> operator to get size of various data types.
+                                        <br><br>
+                                        When the above code is compiled and executed, it produces the following
+                                        result which can vary from machine to machine −</p>
+
+                                <textarea cols="2" rows="8">
+Size of char : 1
+Size of int : 4
+Size of short int : 2
+Size of long int : 4
+Size of float : 4
+Size of double : 8
+Size of wchar_t : 4
+                        </textarea><br><br>
+
+                                <h2 class="pt-2 tm-mb-40 tm-color-primary tm-post-title">typedef Declarations</h2>
+                                <hr class="tm-hr-primary tm-mb-55">
+                                <p>You can create a new name for an existing type using typedef. Following is the simple
+                                    syntax to define a new type using typedef −</p>
+                                <textarea cols="2" rows="1">
+typedef type newname; 
+                        </textarea>
+                                <p>For example, the following tells the compiler that feet is another name for int −</p>
+                                <textarea cols="2" rows="1">
+typedef int feet; 
+                        </textarea>
+                                <p>Now, the following declaration is perfectly legal and creates an integer variable
+                                    called distance −</p>
+                                <textarea cols="2" rows="1">
+feet distance; 
+                        </textarea><br><br>
+
+                                <h2 class="pt-2 tm-mb-40 tm-color-primary tm-post-title">Enumerated Types</h2>
+                                <hr class="tm-hr-primary tm-mb-55">
+                                <p>An enumerated type declares an optional type name and a set of zero or more
+                                    identifiers that can be used as values of the type. Each enumerator is a constant
+                                    whose type is the enumeration.<br><br> Creating an enumeration requires the use of
+                                    the keyword <b>enum</b>. The general form of an enumeration type is −</p>
+                                <textarea cols="2" rows="2">
+enum enum-name { list of names } var-list; 
+                        </textarea>
+                                <p>Here, the enum-name is the enumeration's type name. The list of names is comma
+                                    separated.
+                                    <br><br>
+                                    For example, the following code defines an enumeration of colors called colors and
+                                    the variable c of type color. Finally, c is assigned the value "blue".</p>
+
+                                <textarea cols="2" rows="2">
+enum color { red, green, blue } c;
+c = blue; 
+                        </textarea>
+                                <p>By default, the value of the first name is 0, the second name has the value 1, and
+                                    the third has the value 2, and so on. But you can give a name, a specific value by
+                                    adding an initializer. For example, in the following enumeration, <b>green</b> will have
+                                    the value 5.
+                                </p>
+                        <textarea cols="2" rows="2">
+enum color { red, green = 5, blue }; 
+                        </textarea>
+			<br><br><br><br><br>
+			</div>
+	</div>
+	<label class="fab-menu">
+		<input type="checkbox">
+		<div class="menu-box">
+			<div class="menu-circle">+</div>
+			<ul class="menu-items"> <br>
+				<li><a id="myBtn">Playground</a></li> <br>
+				<li><a href="lesson1.html">Lesson 1</a></li>
+				<li><a href="lesson2.html">Lesson 2</a></li>
+				<li><a href="lesson3.html">Lesson 3</a></li>
+				<li><a href="lesson4.html">Lesson 4</a></li>
+				<li><a href="lesson5.html">Lesson 5</a></li>
+				<li><a href="lesson6.html">Lesson 6</a></li>
+				<li><a href="lesson7.html">Lesson 7</a></li>
+				<li><a href="lesson8.html">Lesson 8</a></li>
+				<li><a href="lesson9.html">Lesson 9</a></li>
+			</ul>
+		</div>
+	</label>
+
+	<!-- The Modal -->
+<div id="myModal" class="modal">
+
+	<!-- Modal content -->
+	<div class="modal-content">
+	  <span class="close">&times;</span>
+	  <iframe src="https://cplayground.com/" width="100%" height="600px" frameborder="0"></iframe>
+	</div>
+  
+  </div>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+				</div>
+				<div class="modal-body">
+					<iframe src="https://cplayground.com/" width="900px" height="500px" frameborder="0"></iframe>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- javascript js -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/nivo-lightbox.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/speech.js"></script>
+
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal 
+		btn.onclick = function () {
+			modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function () {
+			modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	</script>
+</body>
+
+</html>
